@@ -34,14 +34,14 @@ public class CubeStackLogic : MonoBehaviour
             Instantiate(PlayerCube, stickman.transform.position - new Vector3(0, numOfCubes, 0), Quaternion.identity, this.transform);
             animator.SetBool("Jump", true);
             numOfCubes++;
-            Debug.Log(numOfCubes);
+            //Debug.Log(numOfCubes);
         }
         if (other.gameObject.tag == "Enemy")
         {
             childScript.gameObject.transform.SetParent(null);
             Handheld.Vibrate();
             numOfCubes--;
-            Debug.Log(numOfCubes);
+            //Debug.Log(numOfCubes);
         }
     }
 
