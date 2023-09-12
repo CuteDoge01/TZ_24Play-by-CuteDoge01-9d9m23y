@@ -385,9 +385,39 @@ PrefabInstance:
     m_TransformParent: {fileID: 0}
     m_Modifications:
     - target: {fileID: 274569543, guid: d9ce45b6decb1724584923dfb9761356, type: 3}
+      propertyPath: m_Drag
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 274569543, guid: d9ce45b6decb1724584923dfb9761356, type: 3}
+      propertyPath: m_Mass
+      value: 30
+      objectReference: {fileID: 0}
+    - target: {fileID: 274569543, guid: d9ce45b6decb1724584923dfb9761356, type: 3}
+      propertyPath: m_AngularDrag
+      value: 2
+      objectReference: {fileID: 0}
+    - target: {fileID: 274569543, guid: d9ce45b6decb1724584923dfb9761356, type: 3}
       propertyPath: m_Constraints
       value: 114
       objectReference: {fileID: 0}
+    - target: {fileID: 274569544, guid: d9ce45b6decb1724584923dfb9761356, type: 3}
+      propertyPath: m_Material
+      value: 
+      objectReference: {fileID: 13400000, guid: 05627f629234c9148bb77b4179752b55,
+        type: 2}
+    - target: {fileID: 1602972697, guid: d9ce45b6decb1724584923dfb9761356, type: 3}
+      propertyPath: m_Drag
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 1602972697, guid: d9ce45b6decb1724584923dfb9761356, type: 3}
+      propertyPath: m_AngularDrag
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 2120986676, guid: d9ce45b6decb1724584923dfb9761356, type: 3}
+      propertyPath: m_Material
+      value: 
+      objectReference: {fileID: 13400000, guid: 05627f629234c9148bb77b4179752b55,
+        type: 2}
     - target: {fileID: 832749218672296684, guid: d9ce45b6decb1724584923dfb9761356,
         type: 3}
       propertyPath: m_LocalPosition.z
@@ -477,6 +507,16 @@ PrefabInstance:
         type: 3}
       propertyPath: m_Name
       value: Player
+      objectReference: {fileID: 0}
+    - target: {fileID: 2615726216089392376, guid: d9ce45b6decb1724584923dfb9761356,
+        type: 3}
+      propertyPath: m_AngularDrag
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 5333390819784682700, guid: d9ce45b6decb1724584923dfb9761356,
+        type: 3}
+      propertyPath: jumpHeight
+      value: 0.8
       objectReference: {fileID: 0}
     - target: {fileID: 8934987754987297614, guid: d9ce45b6decb1724584923dfb9761356,
         type: 3}

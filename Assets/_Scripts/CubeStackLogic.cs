@@ -19,8 +19,6 @@ public class CubeStackLogic : MonoBehaviour
 
     Animator animator;
 
-    private int numOfCubes = 1;
-
     private void Start()
     {
         animator = stickman.GetComponent<Animator>();
@@ -31,17 +29,13 @@ public class CubeStackLogic : MonoBehaviour
         if (other.gameObject.tag == "Pickup")
         {
             stickman.transform.position += new Vector3(0, jumpHeight, 0);
-            Instantiate(PlayerCube, stickman.transform.position - new Vector3(0, numOfCubes, 0), Quaternion.identity, this.transform);
+            Instantiate(PlayerCube, stickman.transform.position - new Vector3(0, jumpHeight, 0), Quaternion.identity, this.transform);
             animator.SetBool("Jump", true);
-            numOfCubes++;
-            //Debug.Log(numOfCubes);
         }
         if (other.gameObject.tag == "Enemy")
         {
             childScript.gameObject.transform.SetParent(null);
             Handheld.Vibrate();
-            numOfCubes--;
-            //Debug.Log(numOfCubes);
         }
     }
 
