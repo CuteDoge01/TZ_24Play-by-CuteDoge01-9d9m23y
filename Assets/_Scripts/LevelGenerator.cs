@@ -12,9 +12,6 @@ public class LevelGenerator : MonoBehaviour
     private int renderDistance = 20; // Will set the minimum distance that will be covered by level blocks at all times ahead the player
 
     [SerializeField]
-    private Transform origin;
-
-    [SerializeField]
     private GameObject playerPosition;
 
     [SerializeField]
@@ -41,7 +38,8 @@ public class LevelGenerator : MonoBehaviour
     {
         randomNumber = UnityEngine.Random.Range(0, levelBlock.Length - 1);
 
-        Instantiate(levelBlock[randomNumber], new Vector3(0, 0, currBuiltDistance + levelBlockLength), Quaternion.identity);
+        GameObject currentLevelBlock;
+        currentLevelBlock = Instantiate(levelBlock[randomNumber], new Vector3(0, 0, currBuiltDistance + levelBlockLength), Quaternion.identity);
         currBuiltDistance += levelBlockLength;
 
     }

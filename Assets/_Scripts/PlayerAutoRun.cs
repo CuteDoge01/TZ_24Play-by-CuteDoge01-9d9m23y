@@ -12,7 +12,6 @@ public class PlayerAutoRun : MonoBehaviour
 
     private Vector3 tempVector = Vector3.zero;
 
-
     void FixedUpdate()
     {
         tempVector = stickman.GetComponent<Rigidbody>().velocity;
